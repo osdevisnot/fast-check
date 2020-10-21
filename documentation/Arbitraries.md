@@ -61,7 +61,7 @@ fc.assert(
 
 *&#8195;Signatures*
 
-- `fc.boolean()`
+- `fc.boolean()` — _since v_
 
 *&#8195;Usages*
 
@@ -87,9 +87,9 @@ fc.boolean()
 
 *&#8195;Signatures*
 
-- `fc.integer()`
-- `fc.integer({min?, max?})`
-- `fc.integer(min, max)`
+- `fc.integer()` — _since v_
+- `fc.integer({min?, max?})` — _since v2.6.0_
+- `fc.integer(min, max)` — _since v_
 - _`fc.integer(max)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
 *&#8195;with:*
@@ -134,9 +134,9 @@ fc.integer({min: 65536})
 
 *&#8195;Signatures*
 
-- `fc.nat()`
-- `fc.nat({max?})`
-- `fc.nat(max)`
+- `fc.nat()` — _since v_
+- `fc.nat({max?})` — _since v_
+- `fc.nat(max)` — _since v_
 
 *&#8195;with:*
 
@@ -170,7 +170,7 @@ fc.nat({max: 1000})
 
 *&#8195;Signatures*
 
-- `fc.maxSafeInteger()`
+- `fc.maxSafeInteger()` — _since v_
 
 *&#8195;Usages*
 
@@ -191,7 +191,7 @@ fc.maxSafeInteger()
 
 *&#8195;Signatures*
 
-- `fc.maxSafeNat()`
+- `fc.maxSafeNat()` — _since v_
 
 *&#8195;Usages*
 
@@ -215,9 +215,9 @@ fc.maxSafeNat()
 
 *&#8195;Signatures*
 
-- `fc.float()`
-- `fc.float({min?, max?})`
-- `fc.float(min, max)`
+- `fc.float()` — _since v_
+- `fc.float({min?, max?})` — _since v_
+- `fc.float(min, max)` — _since v_
 - _`fc.float(max)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
 *&#8195;with:*
@@ -254,9 +254,9 @@ fc.float({min: -100, max: 100})
 
 *&#8195;Signatures*
 
-- `fc.double()`
-- `fc.double({min?, max?})`
-- `fc.double(min, max)`
+- `fc.double()` — _since v_
+- `fc.double({min?, max?})` — _since v_
+- `fc.double(min, max)` — _since v_
 - _`fc.double(max)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
 *&#8195;with:*
@@ -295,7 +295,7 @@ _if supported by your JavaScript interpreter_
 
 *&#8195;Signatures*
 
-- `fc.bigIntN(n)`
+- `fc.bigIntN(n)` — _since v_
 
 *&#8195;with:*
 
@@ -332,9 +332,9 @@ fc.bigIntN(128)
 
 *&#8195;Signatures*
 
-- `fc.bigInt()`
-- `fc.bigInt({min?, max?})`
-- `fc.bigInt(min, max)`
+- `fc.bigInt()` — _since v_
+- `fc.bigInt({min?, max?})` — _since v_
+- `fc.bigInt(min, max)` — _since v_
 
 *&#8195;with:*
 
@@ -384,7 +384,7 @@ fc.bigInt({min: 1n << 64n})
 
 *&#8195;Signatures*
 
-- `fc.bigUintN(n)`
+- `fc.bigUintN(n)` — _since v_
 
 *&#8195;with:*
 
@@ -420,9 +420,9 @@ fc.bigUintN(128)
 
 *&#8195;Signatures*
 
-- `fc.bigUint()`
-- `fc.bigUint({max?})`
-- `fc.bigUint(max)`
+- `fc.bigUint()` — _since v_
+- `fc.bigUint({max?})` — _since v_
+- `fc.bigUint(max)` — _since v_
 
 *&#8195;with:*
 
@@ -459,7 +459,7 @@ fc.bigUint({max: 12345678901234567890n})
 
 *&#8195;Signatures*
 
-- `fc.hexa()`
+- `fc.hexa()` — _since v_
 
 *&#8195;Usages*
 
@@ -478,7 +478,7 @@ fc.hexa()
 
 *&#8195;Signatures*
 
-- `fc.base64()`
+- `fc.base64()` — _since v_
 
 *&#8195;Usages*
 
@@ -497,7 +497,7 @@ fc.base64()
 
 *&#8195;Signatures*
 
-- `fc.char()`
+- `fc.char()` — _since v_
 
 *&#8195;Usages*
 
@@ -516,7 +516,7 @@ fc.char()
 
 *&#8195;Signatures*
 
-- `fc.ascii()`
+- `fc.ascii()` — _since v_
 
 *&#8195;Usages*
 
@@ -537,7 +537,7 @@ fc.ascii()
 
 *&#8195;Signatures*
 
-- `fc.unicode()`
+- `fc.unicode()` — _since v_
 
 *&#8195;Usages*
 
@@ -559,7 +559,8 @@ fc.unicode()
 
 *&#8195;Signatures*
 
-- `fc.char16bits()`
+- `fc.char16bits()` — _since v_
+
 *&#8195;Usages*
 
 ```js
@@ -579,7 +580,7 @@ fc.char16bits()
 
 *&#8195;Signatures*
 
-- `fc.fullUnicode()`
+- `fc.fullUnicode()` — _since v_
 
 *&#8195;Usages*
 
@@ -600,8 +601,8 @@ fc.fullUnicode()
 
 *&#8195;Signatures*
 
-- `fc.hexaString()`
-- `fc.hexaString({minLength?, maxLength?})`
+- `fc.hexaString()` — _since v_
+- `fc.hexaString({minLength?, maxLength?})` — _since v_
 - _`fc.hexaString(maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 - _`fc.hexaString(minLength, maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
@@ -641,8 +642,8 @@ fc.hexaString({minLength: 4, maxLength: 6})
 
 *&#8195;Signatures*
 
-- `fc.base64String()`
-- `fc.base64String({minLength?, maxLength?})`
+- `fc.base64String()` — _since v_
+- `fc.base64String({minLength?, maxLength?})` — _since v_
 - _`fc.base64String(maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 - _`fc.base64String(minLength, maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
@@ -682,8 +683,8 @@ fc.base64String({minLength: 4, maxLength: 12})
 
 *&#8195;Signatures*
 
-- `fc.string()`
-- `fc.string({minLength?, maxLength?})`
+- `fc.string()` — _since v_
+- `fc.string({minLength?, maxLength?})` — _since v_
 - _`fc.string(maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 - _`fc.string(minLength, maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
@@ -721,8 +722,8 @@ fc.string({minLength: 4, maxLength: 6})
 
 *&#8195;Signatures*
 
-- `fc.asciiString()`
-- `fc.asciiString({minLength?, maxLength?})`
+- `fc.asciiString()` — _since v_
+- `fc.asciiString({minLength?, maxLength?})` — _since v_
 - _`fc.asciiString(maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 - _`fc.asciiString(minLength, maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
@@ -760,8 +761,8 @@ fc.asciiString({minLength: 4, maxLength: 6})
 
 *&#8195;Signatures*
 
-- `fc.unicodeString()`
-- `fc.unicodeString({minLength?, maxLength?})`
+- `fc.unicodeString()` — _since v_
+- `fc.unicodeString({minLength?, maxLength?})` — _since v_
 - _`fc.unicodeString(maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 - _`fc.unicodeString(minLength, maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
@@ -801,8 +802,8 @@ fc.unicodeString({minLength: 4, maxLength: 6})
 
 *&#8195;Signatures*
 
-- `fc.string16bits()`
-- `fc.string16bits({minLength?, maxLength?})`
+- `fc.string16bits()` — _since v_
+- `fc.string16bits({minLength?, maxLength?})` — _since v_
 - _`fc.string16bits(maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 - _`fc.string16bits(minLength, maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
@@ -840,8 +841,8 @@ fc.string16bits({minLength: 4, maxLength: 6})
 
 *&#8195;Signatures*
 
-- `fc.fullUnicodeString()`
-- `fc.fullUnicodeString({minLength?, maxLength?})`
+- `fc.fullUnicodeString()` — _since v_
+- `fc.fullUnicodeString({minLength?, maxLength?})` — _since v_
 - _`fc.fullUnicodeString(maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 - _`fc.fullUnicodeString(minLength, maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
@@ -881,8 +882,8 @@ fc.fullUnicodeString({minLength: 4, maxLength: 6})
 
 *&#8195;Signatures*
 
-- `fc.stringOf(charArb)`
-- `fc.stringOf(charArb, {minLength?, maxLength?})`
+- `fc.stringOf(charArb)` — _since v_
+- `fc.stringOf(charArb, {minLength?, maxLength?})` — _since v_
 - _`fc.stringOf(charArb, maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 - _`fc.stringOf(charArb, minLength, maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
@@ -930,8 +931,8 @@ fc.stringOf(fc.constantFrom('Hello', 'World'), {minLength: 1, maxLength: 3})
 
 *&#8195;Signatures*
 
-- `fc.json()`
-- `fc.json({maxDepth?})`
+- `fc.json()` — _since v_
+- `fc.json({maxDepth?})` — _since v_
 - _`fc.json(maxDepth)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
 *&#8195;with:*
@@ -976,8 +977,8 @@ fc.json({maxDepth: 1})
 
 *&#8195;Signatures*
 
-- `fc.unicodeJson()`
-- `fc.unicodeJson({maxDepth?})`
+- `fc.unicodeJson()` — _since v_
+- `fc.unicodeJson({maxDepth?})` — _since v_
 - _`fc.unicodeJson(maxDepth)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
 *&#8195;with:*
@@ -1013,8 +1014,8 @@ fc.unicodeJson({maxDepth: 1})
 
 *&#8195;Signatures*
 
-- `fc.lorem()`
-- `fc.lorem({maxCount?, mode?})`
+- `fc.lorem()` — _since v_
+- `fc.lorem({maxCount?, mode?})` — _since v_
 - _`fc.lorem(maxWordsCount)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 - _`fc.lorem(maxCount, sentenceMode)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
@@ -1056,7 +1057,7 @@ fc.lorem({maxCount: 3, mode: "sentences"})
 
 *&#8195;Signatures*
 
-- `fc.ipV4()`
+- `fc.ipV4()` — _since v_
 
 *&#8195;Usages*
 
@@ -1075,7 +1076,7 @@ fc.ipV4()
 
 *&#8195;Signatures*
 
-- `fc.ipV4Extended()`
+- `fc.ipV4Extended()` — _since v_
 
 *&#8195;Usages*
 
@@ -1094,7 +1095,7 @@ fc.ipV4Extended()
 
 *&#8195;Signatures*
 
-- `fc.ipV6()`
+- `fc.ipV6()` — _since v_
 
 *&#8195;Usages*
 
@@ -1113,7 +1114,7 @@ fc.ipV6()
 
 *&#8195;Signatures*
 
-- `fc.uuid()`
+- `fc.uuid()` — _since v_
 
 *&#8195;Usages*
 
@@ -1138,7 +1139,7 @@ fc.uuid()
 
 *&#8195;Signatures*
 
-- `fc.uuidV(version)`
+- `fc.uuidV(version)` — _since v_
 
 *&#8195;with:*
 
@@ -1178,7 +1179,7 @@ fc.uuidV(5)
 
 *&#8195;Signatures*
 
-- `fc.domain()`
+- `fc.domain()` — _since v_
 
 *&#8195;Usages*
 
@@ -1205,8 +1206,8 @@ fc.domain()
 
 *&#8195;Signatures*
 
-- `fc.webAuthority()`
-- `fc.webAuthority({withIPv4?, withIPv4Extended?, withIPv6?, withPort?})`
+- `fc.webAuthority()` — _since v_
+- `fc.webAuthority({withIPv4?, withIPv4Extended?, withIPv6?, withPort?})` — _since v_
 
 *&#8195;with:*
 
@@ -1259,7 +1260,7 @@ fc.webAuthority({
 
 *&#8195;Signatures*
 
-- `fc.webFragments()`
+- `fc.webFragments()` — _since v_
 
 *&#8195;Usages*
 
@@ -1280,7 +1281,7 @@ fc.webFragments()
 
 *&#8195;Signatures*
 
-- `fc.webQueryParameters()`
+- `fc.webQueryParameters()` — _since v_
 
 *&#8195;Usages*
 
@@ -1299,7 +1300,7 @@ fc.webQueryParameters()
 
 *&#8195;Signatures*
 
-- `fc.webSegment()`
+- `fc.webSegment()` — _since v_
 
 *&#8195;Usages*
 
@@ -1320,8 +1321,8 @@ fc.webSegment()
 
 *&#8195;Signatures*
 
-- `fc.webUrl()`
-- `fc.webUrl({authoritySettings?, validSchemes?, withFragments?, withQueryParameters?})`
+- `fc.webUrl()` — _since v_
+- `fc.webUrl({authoritySettings?, validSchemes?, withFragments?, withQueryParameters?})` — _since v_
 
 *&#8195;with:*
 
@@ -1378,7 +1379,7 @@ fc.webUrl({
 
 *&#8195;Signatures*
 
-- `fc.emailAddress()`
+- `fc.emailAddress()` — _since v_
 
 *&#8195;Usages*
 
@@ -1403,8 +1404,8 @@ fc.emailAddress()
 
 *&#8195;Signatures*
 
-- `fc.mixedCase(stringArb)`
-- `fc.mixedCase(stringArb, {toggleCase?})`
+- `fc.mixedCase(stringArb)` — _since v_
+- `fc.mixedCase(stringArb, {toggleCase?})` — _since v_
 
 *&#8195;with:*
 
@@ -1457,8 +1458,8 @@ fc.mixedCase(
 
 *&#8195;Signatures*
 
-- `fc.date()`
-- `fc.date({ min?, max? })`
+- `fc.date()` — _since v_
+- `fc.date({ min?, max? })` — _since v_
 
 *&#8195;with:*
 
@@ -1521,7 +1522,7 @@ fc.date({ min: new Date("2000-01-01T00:00:00.000Z"), max: new Date("2000-12-31T2
 
 *&#8195;Signatures*
 
-- `fc.constant(value)`
+- `fc.constant(value)` — _since v_
 
 *&#8195;with:*
 
@@ -1551,7 +1552,7 @@ fc.constant({})
 
 *&#8195;Signatures*
 
-- `fc.constantFrom(...values)`
+- `fc.constantFrom(...values)` — _since v_
 
 *&#8195;with:*
 
@@ -1579,7 +1580,7 @@ fc.constantFrom(1, 'string', {})
 
 *&#8195;Signatures*
 
-- `fc.clonedConstant(value)`
+- `fc.clonedConstant(value)` — _since v_
 
 *&#8195;with:*
 
@@ -1617,8 +1618,8 @@ fc.clonedConstant(buildCloneable({ keyA: 1, keyB: 2 }))
 
 *&#8195;Signatures*
 
-- `fc.option(arb)`
-- `fc.option(arb, {freq?, nil?})`
+- `fc.option(arb)` — _since v_
+- `fc.option(arb, {freq?, nil?})` — _since v_
 - _`fc.option(arb, freq)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
 *&#8195;with:*
@@ -1655,7 +1656,7 @@ fc.option(fc.string(), { nil: undefined })
 
 *&#8195;Signatures*
 
-- `fc.oneof(...arbitraries)`
+- `fc.oneof(...arbitraries)` — _since v_
 
 *&#8195;with:*
 
@@ -1683,7 +1684,7 @@ fc.oneof(fc.char(), fc.boolean(), fc.nat())
 
 *&#8195;Signatures*
 
-- `fc.frequency(...{ arbitrary, weight })`
+- `fc.frequency(...{ arbitrary, weight })` — _since v_
 
 *&#8195;with:*
 
@@ -1711,7 +1712,7 @@ fc.frequency(
 
 *&#8195;Signatures*
 
-- `fc.mapToConstant(...{ num, build })`
+- `fc.mapToConstant(...{ num, build })` — _since v_
 
 *&#8195;with:*
 
@@ -1739,7 +1740,7 @@ fc.mapToConstant(
 
 *&#8195;Signatures*
 
-- `fc.clone(arb, numValues)`
+- `fc.clone(arb, numValues)` — _since v_
 
 *&#8195;with:*
 
@@ -1774,7 +1775,7 @@ fc.clone(fc.nat(), 3)
 
 *&#8195;Signatures*
 
-- _`fc.dedup(arb, numValues)`_ — _deprecated, prefer `fc.clone` instead_
+- _`fc.dedup(arb, numValues)`_ — _deprecated since v2.5.0, prefer `fc.clone` instead_
 
 *&#8195;with:*
 
@@ -1809,7 +1810,7 @@ fc.dedup(fc.nat(), 3)
 
 *&#8195;Signatures*
 
-- `fc.tuple(...arbitraries)`
+- `fc.tuple(...arbitraries)` — _since v_
 
 *&#8195;with:*
 
@@ -1837,7 +1838,7 @@ fc.tuple(fc.nat(), fc.string())
 
 *&#8195;Signatures*
 
-- `fc.genericTuple(arbitraries)`
+- `fc.genericTuple(arbitraries)` — _since v_
 
 *&#8195;with:*
 
@@ -1863,8 +1864,8 @@ fc.genericTuple([fc.nat(), fc.string()])
 
 *&#8195;Signatures*
 
-- `fc.array(arb)`
-- `fc.array(arb, {minLength?, maxLength?})`
+- `fc.array(arb)` — _since v_
+- `fc.array(arb, {minLength?, maxLength?})` — _since v_
 - _`fc.array(arb, maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 - _`fc.array(arb, minLength, maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
@@ -1920,8 +1921,8 @@ fc.array(fc.nat(), {minLength: 5, maxLength: 7})
 
 *&#8195;Signatures*
 
-- `fc.set(arb)`
-- `fc.set(arb, {minLength?, maxLength?, compare?})`
+- `fc.set(arb)` — _since v_
+- `fc.set(arb, {minLength?, maxLength?, compare?})` — _since v_
 - _`fc.set(arb, maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 - _`fc.set(arb, minLength, maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 - _`fc.set(arb, compare)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
@@ -1974,8 +1975,8 @@ fc.set(fc.hexaString(), {minLength: 5, maxLength: 10, compare: (s1, s2) => s1.le
 
 *&#8195;Signatures*
 
-- `fc.subarray(originalArray)`
-- `fc.subarray(originalArray, {minLength?, maxLength?})`
+- `fc.subarray(originalArray)` — _since v_
+- `fc.subarray(originalArray, {minLength?, maxLength?})` — _since v_
 - _`fc.subarray(originalArray, minLength, maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
 *&#8195;with:*
@@ -2012,8 +2013,8 @@ fc.subarray([1, 42, 48, 69, 75, 92], {minLength: 2, maxLength: 3})
 
 *&#8195;Signatures*
 
-- `fc.shuffledSubarray(originalArray)`
-- `fc.shuffledSubarray(originalArray, {minLength?, maxLength?})`
+- `fc.shuffledSubarray(originalArray)` — _since v_
+- `fc.shuffledSubarray(originalArray, {minLength?, maxLength?})` — _since v_
 - _`fc.shuffledSubarray(originalArray, minLength, maxLength)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
 *&#8195;with:*
@@ -2050,7 +2051,7 @@ fc.shuffledSubarray([1, 42, 48, 69, 75, 92], {minLength: 2, maxLength: 3})
 
 *&#8195;Signatures*
 
-- `fc.infiniteStream(arb)`
+- `fc.infiniteStream(arb)` — _since v_
 
 *&#8195;with:*
 
@@ -2081,7 +2082,7 @@ fc.infiniteStream(fc.nat(9))
 
 *&#8195;Signatures*
 
-- `fc.dictionary(keyArb, valueArb)`
+- `fc.dictionary(keyArb, valueArb)` — _since v_
 
 *&#8195;with:*
 
@@ -2122,8 +2123,8 @@ fc.dictionary(fc.string(), fc.nat())
 
 *&#8195;Signatures*
 
-- `fc.record(recordModel)`
-- `fc.record(recordModel, {withDeletedKeys?})`
+- `fc.record(recordModel)` — _since v_
+- `fc.record(recordModel, {withDeletedKeys?})` — _since v_
 
 *&#8195;with:*
 
@@ -2187,8 +2188,8 @@ fc.tuple(
 
 *&#8195;Signatures*
 
-- `fc.object()`
-- `fc.object({key?, maxDepth?, maxKeys?, withBigInt?, withBoxedValues?, withDate?, withMap?, withNullPrototype?, withObjectString?, withSet?, values?})`
+- `fc.object()` — _since v_
+- `fc.object({key?, maxDepth?, maxKeys?, withBigInt?, withBoxedValues?, withDate?, withMap?, withNullPrototype?, withObjectString?, withSet?, values?})` — _since v_
 
 *&#8195;with:*
 
@@ -2279,8 +2280,8 @@ fc.object({
 
 *&#8195;Signatures*
 
-- `fc.jsonObject()`
-- `fc.jsonObject({maxDepth?})`
+- `fc.jsonObject()` — _since v_
+- `fc.jsonObject({maxDepth?})` — _since v_
 - _`fc.jsonObject(maxDepth)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
 *&#8195;with:*
@@ -2316,8 +2317,8 @@ fc.jsonObject({maxDepth: 1})
 
 *&#8195;Signatures*
 
-- `fc.unicodeJsonObject()`
-- `fc.unicodeJsonObject({maxDepth?})`
+- `fc.unicodeJsonObject()` — _since v_
+- `fc.unicodeJsonObject({maxDepth?})` — _since v_
 - _`fc.unicodeJsonObject(maxDepth)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
 *&#8195;with:*
@@ -2353,8 +2354,8 @@ fc.unicodeJsonObject({maxDepth: 1})
 
 *&#8195;Signatures*
 
-- `fc.anything()`
-- `fc.anything({key?, maxDepth?, maxKeys?, withBigInt?, withBoxedValues?, withDate?, withMap?, withNullPrototype?, withObjectString?, withSet?, values?})`
+- `fc.anything()` — _since v_
+- `fc.anything({key?, maxDepth?, maxKeys?, withBigInt?, withBoxedValues?, withDate?, withMap?, withNullPrototype?, withObjectString?, withSet?, values?})` — _since v_
 
 *&#8195;with:*
 
@@ -2437,7 +2438,7 @@ fc.anything({
 
 *&#8195;Signatures*
 
-- `fc.compareBooleanFunc()`
+- `fc.compareBooleanFunc()` — _since v_
 
 *&#8195;Usages*
 
@@ -2494,7 +2495,7 @@ fc.compareBooleanFunc()
 
 *&#8195;Signatures*
 
-- `fc.compareFunc()`
+- `fc.compareFunc()` — _since v_
 
 *&#8195;Usages*
 
@@ -2549,7 +2550,7 @@ fc.compareFunc()
 
 *&#8195;Signatures*
 
-- `fc.func(arb)`
+- `fc.func(arb)` — _since v_
 
 *&#8195;with:*
 
@@ -2602,7 +2603,7 @@ fc.func(fc.nat())
 
 *&#8195;Signatures*
 
-- `fc.letrec(builder)`
+- `fc.letrec(builder)` — _since v_
 
 *&#8195;with:*
 
@@ -2649,7 +2650,7 @@ tree
 
 *&#8195;Signatures*
 
-- `fc.memo(builder)`
+- `fc.memo(builder)` — _since v_
 
 *&#8195;with:*
 
@@ -2689,7 +2690,7 @@ tree(2)
 
 *&#8195;Signatures*
 
-- `.filter(predicate)`
+- `.filter(predicate)` — _since v_
 
 *&#8195;with:*
 
@@ -2721,7 +2722,7 @@ fc.string().filter(s => s[0] < s[1])
 
 *&#8195;Signatures*
 
-- `.map(mapper)`
+- `.map(mapper)` — _since v_
 
 *&#8195;with:*
 
@@ -2759,7 +2760,7 @@ fc.string().map(s => `[${s.length}] -> ${s}`)
 
 *&#8195;Signatures*
 
-- `.chain(fmapper)`
+- `.chain(fmapper)` — _since v_
 
 *&#8195;with:*
 
@@ -2787,7 +2788,7 @@ fc.nat().chain(min => fc.tuple(fc.constant(min), fc.integer(min, 0xffffffff)))
 
 *&#8195;Signatures*
 
-- `fc.falsy()`
+- `fc.falsy()` — _since v_
 
 *&#8195;Usages*
 
@@ -2811,7 +2812,7 @@ fc.falsy({ withBigInt: true })
 
 *&#8195;Signatures*
 
-- `fc.context()`
+- `fc.context()` — _since v_
 
 *&#8195;Usages*
 
@@ -2836,8 +2837,8 @@ fc.context()
 
 *&#8195;Signatures*
 
-- `fc.commands(commandArbs)`
-- `fc.commands(commandArbs, { disableReplayLog?, maxCommands?, replayPath? })`
+- `fc.commands(commandArbs)` — _since v_
+- `fc.commands(commandArbs, { disableReplayLog?, maxCommands?, replayPath? })` — _since v_
 - _`fc.commands(commandArbs, maxCommands)`_ — _deprecated since v2.6.0 ([#992](https://github.com/dubzzz/fast-check/issues/992))_
 
 *&#8195;with:*
@@ -2889,8 +2890,8 @@ Refer to [Model based testing or UI test](./Tips.md#model-based-testing-or-ui-te
 
 *&#8195;Signatures*
 
-- `fc.scheduler()`
-- `fc.scheduler({ act? })`
+- `fc.scheduler()` — _since v_
+- `fc.scheduler({ act? })` — _since v_
 
 *&#8195;with:*
 
