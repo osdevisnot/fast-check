@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "incremental": true,
+        "declaration": true,
+        "sourceMap": true,
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "strictNullChecks": true,
+        "stripInternal": true,
+        "downlevelIteration": true,
+        "importHelpers": false,
+        "module": "commonjs",
+        "target": "es2017",
+        "lib": ["es2017", "es2019.Symbol"],
+        "outDir": "lib/"
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "example",
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
