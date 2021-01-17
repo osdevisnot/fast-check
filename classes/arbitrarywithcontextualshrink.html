@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ArbitraryWithShrink | API Reference | fast-check | Property based testing framework</title>
+	<title>ArbitraryWithContextualShrink | API Reference | fast-check | Property based testing framework</title>
 	<meta name="description" content="Documentation for API Reference | fast-check | Property based testing framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="arbitrarywithshrink.html">ArbitraryWithShrink</a>
+					<a href="arbitrarywithcontextualshrink.html">ArbitraryWithContextualShrink</a>
 				</li>
 			</ul>
-			<h1>Class ArbitraryWithShrink&lt;T&gt;</h1>
+			<h1>Class ArbitraryWithContextualShrink&lt;T&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 						<p>Abstract class able to generate and shrink values on type <code>T</code></p>
 					</div>
 					<p>It can shrink a value that it has not produced through <code>generate</code> (contrary to <a href="arbitrary.html">Arbitrary</a>).
-						In the case of classical <a href="arbitrary.html">Arbitrary</a> there is no <code>shrink</code> or <code>shrinkableFor</code> methods directly on the <a href="arbitrary.html">Arbitrary</a>,
+						In the case of classical <a href="arbitrary.html">Arbitrary</a> there is no <code>contextualShrink</code>, <code>contextualShrinkableFor</code> methods directly on the <a href="arbitrary.html">Arbitrary</a>,
 					the users have to call <code>shrink</code> on the instance of <a href="shrinkable.html">Shrinkable</a> produced by <code>generate</code>.</p>
 				</div>
 			</section>
@@ -91,7 +91,7 @@
 						<a href="arbitrary.html" class="tsd-signature-type">Arbitrary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">ArbitraryWithShrink</span>
+								<span class="target">ArbitraryWithContextualShrink</span>
 							</li>
 						</ul>
 					</li>
@@ -104,15 +104,18 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="arbitrarywithshrink.html#chain" class="tsd-kind-icon">chain</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="arbitrarywithshrink.html#filter" class="tsd-kind-icon">filter</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="arbitrarywithshrink.html#generate" class="tsd-kind-icon">generate</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="arbitrarywithshrink.html#map" class="tsd-kind-icon">map</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="arbitrarywithshrink.html#nobias" class="tsd-kind-icon">no<wbr>Bias</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="arbitrarywithshrink.html#noshrink" class="tsd-kind-icon">no<wbr>Shrink</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="arbitrarywithshrink.html#shrink" class="tsd-kind-icon">shrink</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="arbitrarywithshrink.html#shrinkablefor" class="tsd-kind-icon">shrinkable<wbr>For</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="arbitrarywithshrink.html#withbias" class="tsd-kind-icon">with<wbr>Bias</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="arbitrarywithcontextualshrink.html#chain" class="tsd-kind-icon">chain</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="arbitrarywithcontextualshrink.html#contextualshrink" class="tsd-kind-icon">contextual<wbr>Shrink</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="arbitrarywithcontextualshrink.html#contextualshrinkablefor" class="tsd-kind-icon">contextual<wbr>Shrinkable<wbr>For</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="arbitrarywithcontextualshrink.html#filter" class="tsd-kind-icon">filter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="arbitrarywithcontextualshrink.html#generate" class="tsd-kind-icon">generate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="arbitrarywithcontextualshrink.html#map" class="tsd-kind-icon">map</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="arbitrarywithcontextualshrink.html#nobias" class="tsd-kind-icon">no<wbr>Bias</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="arbitrarywithcontextualshrink.html#noshrink" class="tsd-kind-icon">no<wbr>Shrink</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="arbitrarywithcontextualshrink.html#shrink" class="tsd-kind-icon">shrink</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="arbitrarywithcontextualshrink.html#shrinkablefor" class="tsd-kind-icon">shrinkable<wbr>For</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="arbitrarywithcontextualshrink.html#shrunkoncecontext" class="tsd-kind-icon">shrunk<wbr>Once<wbr>Context</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="arbitrarywithcontextualshrink.html#withbias" class="tsd-kind-icon">with<wbr>Bias</a></li>
 							</ul>
 						</section>
 					</div>
@@ -180,6 +183,79 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="arbitrary.html" class="tsd-signature-type">Arbitrary</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>New arbitrary of new type</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="contextualshrink" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> contextual<wbr>Shrink</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">contextual<wbr>Shrink<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, context<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="stream.html" class="tsd-signature-type">Stream</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/bc17ccf/src/check/arbitrary/definition/ArbitraryWithContextualShrink.ts#L40">src/check/arbitrary/definition/ArbitraryWithContextualShrink.ts:40</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Produce a stream of shrinks of value</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Value to shrink</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> context: <span class="tsd-signature-type">unknown</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>-</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="stream.html" class="tsd-signature-type">Stream</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Stream of shrinks associated to value</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="contextualshrinkablefor" class="tsd-anchor"></a>
+					<h3>contextual<wbr>Shrinkable<wbr>For</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">contextual<wbr>Shrinkable<wbr>For<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, context<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="shrinkable.html" class="tsd-signature-type">Shrinkable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/bc17ccf/src/check/arbitrary/definition/ArbitraryWithContextualShrink.ts#L49">src/check/arbitrary/definition/ArbitraryWithContextualShrink.ts:49</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Build the Shrinkable associated to value</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Value to shrink</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> context: <span class="tsd-signature-type">unknown</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="shrinkable.html" class="tsd-signature-type">Shrinkable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Shrinkable associated to value</p>
 						</li>
 					</ul>
 				</section>
@@ -312,7 +388,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="arbitrary.html">Arbitrary</a>.<a href="arbitrary.html#generate">generate</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/bc17ccf/src/check/arbitrary/definition/ArbitraryWithShrink.ts#L23">src/check/arbitrary/definition/ArbitraryWithShrink.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/bc17ccf/src/check/arbitrary/definition/ArbitraryWithContextualShrink.ts#L31">src/check/arbitrary/definition/ArbitraryWithContextualShrink.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -456,7 +532,7 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="shrink" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> shrink</h3>
+					<h3>shrink</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">shrink<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, shrunkOnce<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="stream.html" class="tsd-signature-type">Stream</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
@@ -464,13 +540,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/bc17ccf/src/check/arbitrary/definition/ArbitraryWithShrink.ts#L32">src/check/arbitrary/definition/ArbitraryWithShrink.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/bc17ccf/src/check/arbitrary/definition/ArbitraryWithContextualShrink.ts#L72">src/check/arbitrary/definition/ArbitraryWithContextualShrink.ts:72</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Produce a stream of shrinks of value</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>Prefer contextualShrink</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -502,13 +583,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/bc17ccf/src/check/arbitrary/definition/ArbitraryWithShrink.ts#L41">src/check/arbitrary/definition/ArbitraryWithShrink.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/bc17ccf/src/check/arbitrary/definition/ArbitraryWithContextualShrink.ts#L86">src/check/arbitrary/definition/ArbitraryWithContextualShrink.ts:86</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Build the Shrinkable associated to value</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>Prefer contextualShrinkableFor</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -527,6 +613,33 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="shrinkable.html" class="tsd-signature-type">Shrinkable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>Shrinkable associated to value</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="shrunkoncecontext" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> shrunk<wbr>Once<wbr>Context</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">shrunk<wbr>Once<wbr>Context<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/bc17ccf/src/check/arbitrary/definition/ArbitraryWithContextualShrink.ts#L61">src/check/arbitrary/definition/ArbitraryWithContextualShrink.ts:61</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Produce a context for shrunkOnce case</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>Prefer context based variants of shrink and shrinkableFor</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -574,34 +687,43 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-has-type-parameter">
-						<a href="arbitrarywithshrink.html" class="tsd-kind-icon">Arbitrary<wbr>With<wbr>Shrink</a>
+						<a href="arbitrarywithcontextualshrink.html" class="tsd-kind-icon">Arbitrary<wbr>With<wbr>Contextual<wbr>Shrink</a>
 						<ul>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="arbitrarywithshrink.html#chain" class="tsd-kind-icon">chain</a>
+								<a href="arbitrarywithcontextualshrink.html#chain" class="tsd-kind-icon">chain</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="arbitrarywithcontextualshrink.html#contextualshrink" class="tsd-kind-icon">contextual<wbr>Shrink</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="arbitrarywithcontextualshrink.html#contextualshrinkablefor" class="tsd-kind-icon">contextual<wbr>Shrinkable<wbr>For</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="arbitrarywithshrink.html#filter" class="tsd-kind-icon">filter</a>
+								<a href="arbitrarywithcontextualshrink.html#filter" class="tsd-kind-icon">filter</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="arbitrarywithshrink.html#generate" class="tsd-kind-icon">generate</a>
+								<a href="arbitrarywithcontextualshrink.html#generate" class="tsd-kind-icon">generate</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="arbitrarywithshrink.html#map" class="tsd-kind-icon">map</a>
+								<a href="arbitrarywithcontextualshrink.html#map" class="tsd-kind-icon">map</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="arbitrarywithshrink.html#nobias" class="tsd-kind-icon">no<wbr>Bias</a>
+								<a href="arbitrarywithcontextualshrink.html#nobias" class="tsd-kind-icon">no<wbr>Bias</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="arbitrarywithshrink.html#noshrink" class="tsd-kind-icon">no<wbr>Shrink</a>
+								<a href="arbitrarywithcontextualshrink.html#noshrink" class="tsd-kind-icon">no<wbr>Shrink</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="arbitrarywithshrink.html#shrink" class="tsd-kind-icon">shrink</a>
+								<a href="arbitrarywithcontextualshrink.html#shrink" class="tsd-kind-icon">shrink</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="arbitrarywithshrink.html#shrinkablefor" class="tsd-kind-icon">shrinkable<wbr>For</a>
+								<a href="arbitrarywithcontextualshrink.html#shrinkablefor" class="tsd-kind-icon">shrinkable<wbr>For</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="arbitrarywithcontextualshrink.html#shrunkoncecontext" class="tsd-kind-icon">shrunk<wbr>Once<wbr>Context</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="arbitrarywithshrink.html#withbias" class="tsd-kind-icon">with<wbr>Bias</a>
+								<a href="arbitrarywithcontextualshrink.html#withbias" class="tsd-kind-icon">with<wbr>Bias</a>
 							</li>
 						</ul>
 					</li>
