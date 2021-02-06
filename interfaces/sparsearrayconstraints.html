@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>BigUintConstraints | API Reference | fast-check | Property based testing framework</title>
+	<title>SparseArrayConstraints | API Reference | fast-check | Property based testing framework</title>
 	<meta name="description" content="Documentation for API Reference | fast-check | Property based testing framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../index.html">API Reference | fast-check | Property based testing framework</a>
 				</li>
 				<li>
-					<a href="biguintconstraints.html">BigUintConstraints</a>
+					<a href="sparsearrayconstraints.html">SparseArrayConstraints</a>
 				</li>
 			</ul>
-			<h1>Interface BigUintConstraints</h1>
+			<h1>Interface SparseArrayConstraints</h1>
 		</div>
 	</div>
 </header>
@@ -68,7 +68,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Constraints to be applied on <a href="../index.html#biguint">bigUint</a></p>
+						<p>Constraints to be applied on <a href="../index.html#sparsearray">sparseArray</a></p>
 					</div>
 				</div>
 			</section>
@@ -76,7 +76,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">BigUintConstraints</span>
+						<span class="target">SparseArrayConstraints</span>
 					</li>
 				</ul>
 			</section>
@@ -87,7 +87,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="biguintconstraints.html#max" class="tsd-kind-icon">max</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sparsearrayconstraints.html#maxlength" class="tsd-kind-icon">max<wbr>Length</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sparsearrayconstraints.html#maxnumelements" class="tsd-kind-icon">max<wbr>Num<wbr>Elements</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sparsearrayconstraints.html#minnumelements" class="tsd-kind-icon">min<wbr>Num<wbr>Elements</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sparsearrayconstraints.html#notrailinghole" class="tsd-kind-icon">no<wbr>Trailing<wbr>Hole</a></li>
 							</ul>
 						</section>
 					</div>
@@ -96,17 +99,62 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="max" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max</h3>
-					<div class="tsd-signature tsd-kind-icon">max<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span></div>
+					<a name="maxlength" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Length</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e9ad01f/src/check/arbitrary/BigIntArbitrary.ts#L211">src/check/arbitrary/BigIntArbitrary.ts:211</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e9ad01f/src/check/arbitrary/SparseArrayArbitrary.ts#L14">src/check/arbitrary/SparseArrayArbitrary.ts:14</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Upper bound for the generated bigints (eg.: 2147483647n, BigInt(Number.MAX_SAFE_INTEGER))</p>
+							<p>Upper bound of the generated array size (maximal size: 4294967295)</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="maxnumelements" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Num<wbr>Elements</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Num<wbr>Elements<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e9ad01f/src/check/arbitrary/SparseArrayArbitrary.ts#L18">src/check/arbitrary/SparseArrayArbitrary.ts:18</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Upper bound of the number of non-hole elements</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="minnumelements" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> min<wbr>Num<wbr>Elements</h3>
+					<div class="tsd-signature tsd-kind-icon">min<wbr>Num<wbr>Elements<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e9ad01f/src/check/arbitrary/SparseArrayArbitrary.ts#L16">src/check/arbitrary/SparseArrayArbitrary.ts:16</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Lower bound of the number of non-hole elements</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="notrailinghole" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> no<wbr>Trailing<wbr>Hole</h3>
+					<div class="tsd-signature tsd-kind-icon">no<wbr>Trailing<wbr>Hole<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e9ad01f/src/check/arbitrary/SparseArrayArbitrary.ts#L20">src/check/arbitrary/SparseArrayArbitrary.ts:20</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>When enabled, all generated arrays will either be the empty array or end by a non-hole</p>
 						</div>
 					</div>
 				</section>
@@ -125,10 +173,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="biguintconstraints.html" class="tsd-kind-icon">Big<wbr>Uint<wbr>Constraints</a>
+						<a href="sparsearrayconstraints.html" class="tsd-kind-icon">Sparse<wbr>Array<wbr>Constraints</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="biguintconstraints.html#max" class="tsd-kind-icon">max</a>
+								<a href="sparsearrayconstraints.html#maxlength" class="tsd-kind-icon">max<wbr>Length</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="sparsearrayconstraints.html#maxnumelements" class="tsd-kind-icon">max<wbr>Num<wbr>Elements</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="sparsearrayconstraints.html#minnumelements" class="tsd-kind-icon">min<wbr>Num<wbr>Elements</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="sparsearrayconstraints.html#notrailinghole" class="tsd-kind-icon">no<wbr>Trailing<wbr>Hole</a>
 							</li>
 						</ul>
 					</li>
