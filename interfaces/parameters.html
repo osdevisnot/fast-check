@@ -70,6 +70,11 @@
 					<div class="lead">
 						<p>Customization of the parameters used to run the properties</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>remarks</dt>
+						<dd><p>Since 0.0.6</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-type-parameters">
@@ -129,7 +134,7 @@
 					<div class="tsd-signature tsd-kind-icon">async<wbr>Reporter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>runDetails<span class="tsd-signature-symbol">: </span><a href="../index.html#rundetails" class="tsd-signature-type" data-tsd-kind="Type alias">RunDetails</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/runner/configuration/Parameters.ts#L137">src/check/runner/configuration/Parameters.ts:137</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/runner/configuration/Parameters.ts#L164">src/check/runner/configuration/Parameters.ts:164</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -141,6 +146,11 @@
 						<p>Only used when calling <a href="../index.html#assert">assert</a>
 							Cannot be defined in conjonction with <code>reporter</code>
 						Not compatible with synchronous properties: runner will throw</p>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 1.25.0</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -149,7 +159,7 @@
 					<div class="tsd-signature tsd-kind-icon">end<wbr>OnFailure<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/runner/configuration/Parameters.ts#L116">src/check/runner/configuration/Parameters.ts:116</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/runner/configuration/Parameters.ts#L139">src/check/runner/configuration/Parameters.ts:139</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -159,6 +169,11 @@
 						<p>It makes the run stop at the first encountered failure without shrinking.</p>
 						<p>When used in complement to <code>seed</code> and <code>path</code>,
 						it replays only the minimal counterexample.</p>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 1.11.0</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -167,7 +182,7 @@
 					<div class="tsd-signature tsd-kind-icon">examples<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/runner/configuration/Parameters.ts#L107">src/check/runner/configuration/Parameters.ts:107</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/runner/configuration/Parameters.ts#L128">src/check/runner/configuration/Parameters.ts:128</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -175,6 +190,11 @@
 							<p>Custom values added at the beginning of generated ones</p>
 						</div>
 						<p>It enables users to come with examples they want to test at every run</p>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 1.4.0</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -183,7 +203,7 @@
 					<div class="tsd-signature tsd-kind-icon">interrupt<wbr>After<wbr>Time<wbr>Limit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/runner/configuration/Parameters.ts#L75">src/check/runner/configuration/Parameters.ts:75</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/runner/configuration/Parameters.ts#L88">src/check/runner/configuration/Parameters.ts:88</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -198,6 +218,11 @@
 							If the test got interrupted before any failure occured
 							and before it reached the requested number of runs specified by <code>numRuns</code>
 						it will be marked as success. Except if <code>markInterruptAsFailure</code> has been set to <code>true</code></p>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 1.19.0</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -206,13 +231,18 @@
 					<div class="tsd-signature tsd-kind-icon">mark<wbr>Interrupt<wbr>AsFailure<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/runner/configuration/Parameters.ts#L79">src/check/runner/configuration/Parameters.ts:79</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/runner/configuration/Parameters.ts#L93">src/check/runner/configuration/Parameters.ts:93</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Mark interrupted runs as failed runs: disabled by default</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 1.19.0</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -221,7 +251,7 @@
 					<div class="tsd-signature tsd-kind-icon">max<wbr>Skips<wbr>Per<wbr>Run<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/runner/configuration/Parameters.ts#L40">src/check/runner/configuration/Parameters.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/runner/configuration/Parameters.ts#L48">src/check/runner/configuration/Parameters.ts:48</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -231,6 +261,11 @@
 						<p>Skipped is considered globally, so this value is used to compute maxSkips = maxSkipsPerRun * numRuns.
 						Runner will consider a run to have failed if it skipped maxSkips+1 times before having generated numRuns valid entries.</p>
 						<p>See <a href="../index.html#pre">pre</a> for more details on pre-conditions</p>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 1.3.0</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -239,13 +274,18 @@
 					<div class="tsd-signature tsd-kind-icon">num<wbr>Runs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/runner/configuration/Parameters.ts#L31">src/check/runner/configuration/Parameters.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/runner/configuration/Parameters.ts#L37">src/check/runner/configuration/Parameters.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Number of runs before success: 100 by default</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 1.0.0</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -254,7 +294,7 @@
 					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/runner/configuration/Parameters.ts#L84">src/check/runner/configuration/Parameters.ts:84</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/runner/configuration/Parameters.ts#L99">src/check/runner/configuration/Parameters.ts:99</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -262,6 +302,11 @@
 							<p>Way to replay a failing property directly with the counterexample.
 							It can be fed with the counterexamplePath returned by the failing test (requires <code>seed</code> too).</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 1.0.0</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -270,7 +315,7 @@
 					<div class="tsd-signature tsd-kind-icon">random<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;mersenne&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;congruential&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;congruential32&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;xorshift128plus&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;xoroshiro128plus&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>seed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/runner/configuration/Parameters.ts#L27">src/check/runner/configuration/Parameters.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/runner/configuration/Parameters.ts#L32">src/check/runner/configuration/Parameters.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -280,6 +325,11 @@
 						<p>Random generator is the core element behind the generation of random values - changing it might directly impact the quality and performances of the generation of random values.
 							It can be one of: &#39;mersenne&#39;, &#39;congruential&#39;, &#39;congruential32&#39;, &#39;xorshift128plus&#39;, &#39;xoroshiro128plus&#39;
 						Or any function able to build a <code>RandomGenerator</code> based on a seed</p>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 1.6.0</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -288,7 +338,7 @@
 					<div class="tsd-signature tsd-kind-icon">reporter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>runDetails<span class="tsd-signature-symbol">: </span><a href="../index.html#rundetails" class="tsd-signature-type" data-tsd-kind="Type alias">RunDetails</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/runner/configuration/Parameters.ts#L126">src/check/runner/configuration/Parameters.ts:126</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/runner/configuration/Parameters.ts#L151">src/check/runner/configuration/Parameters.ts:151</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -299,6 +349,11 @@
 						But you may want to change this behaviour in yours.</p>
 						<p>Only used when calling <a href="../index.html#assert">assert</a>
 						Cannot be defined in conjonction with <code>asyncReporter</code></p>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 1.25.0</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -307,7 +362,7 @@
 					<div class="tsd-signature tsd-kind-icon">seed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/runner/configuration/Parameters.ts#L19">src/check/runner/configuration/Parameters.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/runner/configuration/Parameters.ts#L22">src/check/runner/configuration/Parameters.ts:22</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -317,6 +372,11 @@
 						<p>It can be forced to replay a failed run.</p>
 						<p>In theory, seeds are supposed to be 32-bit integers.
 						In case of double value, the seed will be rescaled into a valid 32-bit integer (eg.: values between 0 and 1 will be evenly spread into the range of possible seeds).</p>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 0.0.6</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -325,7 +385,7 @@
 					<div class="tsd-signature tsd-kind-icon">skip<wbr>All<wbr>After<wbr>Time<wbr>Limit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/runner/configuration/Parameters.ts#L60">src/check/runner/configuration/Parameters.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/runner/configuration/Parameters.ts#L71">src/check/runner/configuration/Parameters.ts:71</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -339,6 +399,11 @@
 						<p>WARNING:
 							It skips runs. Thus test might be marked as failed.
 						Indeed, it might not reached the requested number of successful runs.</p>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 1.15.0</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -347,7 +412,7 @@
 					<div class="tsd-signature tsd-kind-icon">timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/runner/configuration/Parameters.ts#L46">src/check/runner/configuration/Parameters.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/runner/configuration/Parameters.ts#L55">src/check/runner/configuration/Parameters.ts:55</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -355,6 +420,11 @@
 							<p>Maximum time in milliseconds for the predicate to answer: disabled by default</p>
 						</div>
 						<p>WARNING: Only works for async code (see <a href="../index.html#asyncproperty">asyncProperty</a>), will not interrupt a synchronous code.</p>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 0.0.11</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -363,13 +433,18 @@
 					<div class="tsd-signature tsd-kind-icon">unbiased<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/runner/configuration/Parameters.ts#L92">src/check/runner/configuration/Parameters.ts:92</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/runner/configuration/Parameters.ts#L109">src/check/runner/configuration/Parameters.ts:109</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Force the use of unbiased arbitraries: biased by default</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 1.1.0</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -378,7 +453,7 @@
 					<div class="tsd-signature tsd-kind-icon">verbose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><a href="../enums/verbositylevel.html#none" class="tsd-signature-type" data-tsd-kind="Enumeration member">None</a><span class="tsd-signature-symbol"> | </span><a href="../enums/verbositylevel.html#verbose" class="tsd-signature-type" data-tsd-kind="Enumeration member">Verbose</a><span class="tsd-signature-symbol"> | </span><a href="../enums/verbositylevel.html#veryverbose" class="tsd-signature-type" data-tsd-kind="Enumeration member">VeryVerbose</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/runner/configuration/Parameters.ts#L101">src/check/runner/configuration/Parameters.ts:101</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/runner/configuration/Parameters.ts#L120">src/check/runner/configuration/Parameters.ts:120</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -388,6 +463,11 @@
 						<p>Using <code>verbose: true</code> is equivalent to <code>verbose: VerbosityLevel.Verbose</code></p>
 						<p>It can prove very useful to troubleshoot issues.
 						See <a href="../enums/verbositylevel.html">VerbosityLevel</a> for more details on each level.</p>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 1.1.0</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 			</section>
@@ -403,13 +483,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/runner/configuration/Parameters.ts#L88">src/check/runner/configuration/Parameters.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/runner/configuration/Parameters.ts#L104">src/check/runner/configuration/Parameters.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Logger (see <a href="../index.html#statistics">statistics</a>): <code>console.log</code> by default</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p>Since 0.0.6</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">

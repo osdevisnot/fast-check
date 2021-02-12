@@ -68,9 +68,13 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Instance able to reschedule the ordering of promises
-						for a given app</p>
+						<p>Instance able to reschedule the ordering of promises for a given app</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>remarks</dt>
+						<dd><p>Since 1.20.0</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-type-parameters">
@@ -121,7 +125,7 @@
 					<div class="tsd-signature tsd-kind-icon">report<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="schedulerreportitem.html" class="tsd-signature-type" data-tsd-kind="Interface">SchedulerReportItem</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TMetaData</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/arbitrary/AsyncSchedulerArbitrary.ts#L111">src/check/arbitrary/AsyncSchedulerArbitrary.ts:111</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/arbitrary/AsyncSchedulerArbitrary.ts#L158">src/check/arbitrary/AsyncSchedulerArbitrary.ts:158</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -130,6 +134,11 @@
 							If the task has been executed, it includes a string representation of the associated output or error produced by the task if any.</p>
 						</div>
 						<p>Tasks will be returned in the order they get executed by the scheduler.</p>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 1.25.0</p>
+							</dd>
+						</dl>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
@@ -153,13 +162,18 @@
 					<div class="tsd-signature tsd-kind-icon">schedule<span class="tsd-signature-symbol">:</span> &lt;T&gt;<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, metadata<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TMetaData</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/arbitrary/AsyncSchedulerArbitrary.ts#L65">src/check/arbitrary/AsyncSchedulerArbitrary.ts:65</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/arbitrary/AsyncSchedulerArbitrary.ts#L102">src/check/arbitrary/AsyncSchedulerArbitrary.ts:102</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Wrap a new task using the Scheduler</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 1.20.0</p>
+							</dd>
+						</dl>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
@@ -201,13 +215,18 @@
 					<div class="tsd-signature tsd-kind-icon">schedule<wbr>Function<span class="tsd-signature-symbol">:</span> &lt;TArgs, T&gt;<span class="tsd-signature-symbol">(</span>asyncFunction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TArgs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TArgs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/arbitrary/AsyncSchedulerArbitrary.ts#L68">src/check/arbitrary/AsyncSchedulerArbitrary.ts:68</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/arbitrary/AsyncSchedulerArbitrary.ts#L108">src/check/arbitrary/AsyncSchedulerArbitrary.ts:108</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Automatically wrap function output using the Scheduler</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 1.20.0</p>
+							</dd>
+						</dl>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
@@ -282,7 +301,7 @@
 					<div class="tsd-signature tsd-kind-icon">wait<wbr>All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/arbitrary/AsyncSchedulerArbitrary.ts#L103">src/check/arbitrary/AsyncSchedulerArbitrary.ts:103</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/arbitrary/AsyncSchedulerArbitrary.ts#L148">src/check/arbitrary/AsyncSchedulerArbitrary.ts:148</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -290,6 +309,11 @@
 							<p>Wait all scheduled tasks,
 							including the ones that might be created by one of the resolved task</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 1.20.0</p>
+							</dd>
+						</dl>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
@@ -313,7 +337,7 @@
 					<div class="tsd-signature tsd-kind-icon">wait<wbr>One<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/arbitrary/AsyncSchedulerArbitrary.ts#L97">src/check/arbitrary/AsyncSchedulerArbitrary.ts:97</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/arbitrary/AsyncSchedulerArbitrary.ts#L141">src/check/arbitrary/AsyncSchedulerArbitrary.ts:141</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -323,6 +347,9 @@
 						<dl class="tsd-comment-tags">
 							<dt>throws</dt>
 							<dd><p>Whenever there is no task scheduled</p>
+							</dd>
+							<dt>remarks</dt>
+							<dd><p>Since 1.20.0</p>
 							</dd>
 						</dl>
 					</div>
@@ -355,13 +382,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/arbitrary/AsyncSchedulerArbitrary.ts#L91">src/check/arbitrary/AsyncSchedulerArbitrary.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/arbitrary/AsyncSchedulerArbitrary.ts#L134">src/check/arbitrary/AsyncSchedulerArbitrary.ts:134</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Count of pending scheduled tasks</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p>Since 1.20.0</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
@@ -377,7 +409,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6805a2d/src/check/arbitrary/AsyncSchedulerArbitrary.ts#L84">src/check/arbitrary/AsyncSchedulerArbitrary.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e645c36/src/check/arbitrary/AsyncSchedulerArbitrary.ts#L126">src/check/arbitrary/AsyncSchedulerArbitrary.ts:126</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -393,6 +425,11 @@
 									<li>done if all the promises have been executed properly</li>
 									<li>faulty if one of the promises within the sequence throws</li>
 								</ul>
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p>Since 1.20.0</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
